@@ -1,0 +1,230 @@
+/*Log in and Registration Form Design*/
+*
+#order-form /*id="order"*/
+{
+	display:none;
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+	
+}
+
+
+
+#food{
+	font-size:15px;
+	font-family:Times New Roman; 
+	color:#21618C; outline:none; 
+	border:none; 
+	background:transparent;
+	cursor:pointer;
+}
+
+
+
+.order-box
+{
+	
+	width:380px;
+	height:580px;
+	position:relative;
+	margin:2% auto;
+	background:#ccccff;
+	padding:10px;
+	overflow:hidden;
+	border-radius:15px;
+		
+}
+
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px white;
+	border-radius:30px;
+	font-size:15px;
+	
+	
+	
+}
+
+#x{
+	z-index: 1;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+}
+
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline:none;
+	position:relative;
+}
+#btn
+{
+	top:0;
+	left:0;
+	position:absolute;
+	width:110px;
+	height:100%;
+	background:white;
+	border-radius:30px;
+	transition:.5s;
+	
+}
+
+.input-group-order
+{
+	top:120px;
+	position: absolute;
+	width:280px;
+	transition:.5s;
+	
+}
+
+
+
+
+
+.choices{
+	text-align:center;
+	font-size:15px;
+}
+
+.size_option{
+	margin-top:5%;
+	
+}
+
+.spam,.hotcakes,.spam_plat,.chicken_rice,.chicken_spag,.supermeal,.bacon_burger,.bacon_alacart,.chicken_burger,.chicken_alacart,.reg_fries,.curly_fries 
+{
+		display:none;
+		clear:both;
+		width:100%;
+		background-color:white;
+	}
+	
+
+#close {
+  
+	margin-left:90%;
+	margin-bottom:125%;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
+}
+
+.close:hover {background: #bbb;}
+
+.drink-side{
+	width:65%;
+	padding:10px 0;
+	margin: 0 0 0 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:white;
+	border-radius:10px;
+}
+
+.size-side{
+	
+	padding:10px 0;
+	margin:0 0 0 0;
+	margin-left:3%;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:white;
+	border-radius:10px;
+}
+
+.drinkchoices-field
+{
+	width:85%;
+	padding:10px 0;
+	margin:0 0 0 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:White;
+	border-radius:10px;
+}
+
+.submit-btn
+{
+	width:83%;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:0 0 0 5px; 
+	background:white;
+	border:0;
+	outline:none;
+	border-radius:30px;
+}
+
+.error {
+
+   background: #F2DEDE;
+
+   color: #0c0101;
+
+   padding: 10px;
+
+   width: 95%;
+
+   border-radius: 5px;
+
+   margin: 20px auto;
+
+}
+
+
+
+.check-box
+{margin:30 px 10px 34px 0;}
+
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+
+#order
+{left:50px}
+
+#chicken
+{left:50px}
+
+#login input
+{color:white; font-size:15px}
+
+#register
+{left:450px;}
+
+#register input
+{color:white; font-size:15px} 
+
+
+
+

@@ -1,0 +1,49 @@
+<nav><ul>
+<form id="order" class="input_group_order" action="order_system.php" method="post" autocomplete="off">
+		
+		<select type="number" class="drinkchoices-field" name="quantity">
+			<option class="choices">Quantity</option>
+			<option class="choices" value="1">1</option>
+			<option class="choices" value="2">2</option>
+			<option class="choices" value="3">3</option>							
+		</select><br>
+		
+		<select type="number" class="drinkchoices-field" name="variety">
+			<option class="choices">Variety</option>
+			<option class="choices" value="reg">Regular Chicken</option>
+			<option class="choices" value="spicy">Spicy Chicken</option>							
+		</select><br>
+
+		<select class="drink-side" name="add_ons">
+			<option class="choices">Add-ons</option>
+			<option class="choices" value="Regular">Regular Fries</option>
+			<option class="choices" value="Large">Curly Fries</option>
+			<option class="choices" value="None">None</option>
+		</select>
+		
+		<select class="size-side" name="fries_size">
+			<option class="choices">Size</option>
+			<option class="choices" value="Small">Small</option>
+			<option class="choices" value="Medium">Medium</option>
+			<option class="choices" value="Large">Large</option>
+		</select>
+		
+		<select class="drink-side" name="drink_choice">
+			<option class="choices">Drink</option>
+			<option class="choices" value="Pepsi">Pepsi</option>
+			<option class="choices" value="Coke">Coke</option>
+			<option class="choices" value="Sprite">Sprite</option>
+		</select>
+		
+		<select class="size-side" name="drink_size">
+			<option class="choices">Size</option>
+			<option class="choices" value="Small">Small</option>
+			<option class="choices" value="Medium">Medium</option>
+			<option class="choices" value="Large">Large</option>
+		</select>
+		
+		<button class="submit-btn" type="submit" name="submit">Order</button>
+					
+	</form>
+	
+</nav></ul>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+	<!--<script
+	  src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	  crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+			$('#header').load('filename.html');
+		});
+	</script>
+	 <style>
+	  img{
+		margin:100px auto;
+		display:
+	  }
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+        $("div").toggle();
+		});
+	});
+	</script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+	
+  </head>
+
+  
+  <body><link rel="stylesheet" href="order_style.css"> <!--Connect to Order CSS file-->
+  
+	
+	
+	
+	<table id="box" style="table-layout:fixed; width:80%; margin-left:auto; margin-right:auto">
+		<tbody>
+			<tr>
+				<th style="text-decoration:none; background-image:url(images/spam_egg_pandesal.jpg);
+					background-position:center; background-size:800px 500px;border-radius: 15px">
+					<h3 style="margin-top:90%;font-size:25px;color:white;
+						text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Spam Egg Pandesal</h3>
+					<div id="row41" class="order-btn" ><button>Order now</button></div> 
+					
+				</th>
+				
+				<th style="text-decoration:none; background-image:url(images/chickenhugs_with_rice.jpg);
+					background-position:center; background-size:800px 500px;border-radius: 15px">
+					<h3 style="margin-top:90%;font-size:25px;color:white;
+						text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Chickenhugs + Rice</h3>
+					<div id="row42" class="order-btn"><button>Order now</button></div> 
+					
+				</th>
+				
+				<th style="text-decoration:none; background-image:url(images/chickenhugs_with_spag.jpg);
+					background-position:center; background-size:800px 500px;border-radius: 15px">
+					<h3 style="margin-top:90%;font-size:25px;color:white;
+						text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Chickenhugs + Spag</h3>
+					<div id="row43" class="order-btn"><button>Order now</button></div> 
+					
+				</th>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id ="order-form" class='order-page row41'>
+						<div class="order-box">	
+						
+					<span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+						<img src="images/spam_egg_pandesal.jpg" style="border-radius:15px" 
+							width="100%" height="auto" >
+							<h3>&ensp;Spam Egg Pandesal</h3>
+							<h5>&emsp;Freshly bake Pandesal with Spam and Egg.</h5>
+							<iframe src="./food_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+								
+						</div>
+					</div>
+	
+<div id ="order-form" class='order-page row42'>
+	<div class="order-box">	
+	<span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+	<img src="https://www.starbucks.ph/media/SPAM%20Classic%20Egg%20and%20Cheese%20on%20Potato%20Bread_tcm70-59248_w1024_n.jpg" style="border-radius:15px" 
+		width="100%" height="auto" >
+		<h3>&ensp;Watusi watusi</h3>
+		<h5>&emsp;Hot Pandesal with Spam and Egg as palaman<br>Bahala ka na sa buhay mo</h5>
+		<iframe src="./food_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+	</div>
+</div>
+
+
+
+<div id ="order-form" class='order-page row43'>
+			<div class="order-box">	
+			<span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="https://www.starbucks.ph/media/SPAM%20Classic%20Egg%20and%20Cheese%20on%20Potato%20Bread_tcm70-59248_w1024_n.jpg" style="border-radius:15px" 
+				width="100%" height="auto" >
+				<h3>&ensp;Hotdog </h3>
+				<h5>&emsp;Hot Pandesal with Spam and Egg as palaman<br>Bahala ka na sa buhay mo</h5>
+				<iframe src="./food_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+				
+			</div>
+		</div>
+
+
+<script>
+
+	
+	$(".order-btn").click(function (e) {
+
+       e.preventDefault();
+
+       $('[class^=row]').not($('.'+this.id)).hide();          
+
+       $('.'+this.id).slideToggle(500);
+		});
+
+
+
+</script>
+		
+	<script>
+		var closebtns = document.getElementsByClassName("close");
+		var i;
+
+		/* Loop through the elements, and hide the parent, when clicked on */
+		for (i = 0; i < closebtns.length; i++) {
+		  closebtns[i].addEventListener("click", function() {
+			this.parentElement.style.display = 'none';
+		  });
+		}
+		
+	</script>
+	
+	
+	<script>
+		var w=document.getElementById('order');
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+		x.style.left='-400px';
+		y.style.left='50px';
+		z.style.left='110px';
+		}
+		function login()
+		{
+		x.style.left='50px';
+		y.style.left='450px';
+		z.style.left='0px';
+		}
+		function order()
+		{
+		x.style.left='50px';
+		z.style.left='0px';
+		}
+	</script>
+	
+	<script>
+		var modal = document.getElementById('login-form');
+		var modal = document.getElementById('spam-form');
+		var modal = document.getElementById('order-form');
+		window.onclick = function(event)
+		{
+		if(event.target == modal)
+		{ modal.style.display ="none";}
+		}
+		
+		
+	</script>
+				
+</html>

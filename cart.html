@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html style="background-color:#CCCCFF">
+
+	<head>
+		<title > Chick-A-Dee </title> <!--Logged in-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+		
+	</head>
+	
+	<header style="background-image: url(https://thumbs.dreamstime.com/z/fast-food-dish-white-background-take-away-unhealthy-set-including-burgers-sauces-french-fries-donuts-cola-sweets-icecream-148960914.jpg);
+			background-position:center; 
+			color:white; 
+			margin-top:-5%">
+			
+		<h1 style="text-align:center; font-size:50px; color:#DC7633;
+			text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white">
+		
+		<br><big><big><big>Chick-A-Dee</big></big></big></h1>
+		
+		<h2 style="text-align:center; color:black;
+			text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white">
+			Your everyday foodtrip buddy<br><br></h2>
+	</header>
+	
+	<body style="background-color: white;margin-left:10%; margin-right:10%" onload="myFunction()">
+		<link rel="stylesheet" href="css_file.css">
+		<nav id="header" style="width:30%;margin-left:67%">
+			<ul>
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="index.html" target="_self">
+						<h4 style="text-align:right; margin-right:3%;color:#21618C">Home&ensp;</h4>
+					</a>
+				</li>
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="categories.html" target="_self">
+						<h4 style="text-align:right; margin-right:3%;color:#21618C">Categories</h4>
+					</a>
+				</li>
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="cart.html" target="_self">
+						<h4 style="text-align:right;margin-left:5%;color:#21618C">Cart</h4>
+					</a>
+				</li>
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="index.html" target="_self">
+						<h4 style="text-align:right;color:#21618C">&ensp;Log out</h4>
+					</a>
+				</li>
+				
+			
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="about_restaurant.html" target="_self">
+						<h4 style="text-align:right; margin-left:5%;color:#21618C;width:auto">&ensp;About</h4>
+					</a>
+				</li>
+			</ul>
+		</nav> 
+
+		
+		<script>
+			var w=document.getElementById('order');
+			var x=document.getElementById('login');
+			var y=document.getElementById('register');
+			var z=document.getElementById('btn');
+			function register()
+			{
+				x.style.left='-400px';
+				y.style.left='50px';
+				z.style.left='110px';
+			}
+			function login()
+			{
+				x.style.left='50px';
+				y.style.left='450px';
+				z.style.left='0px';
+			}
+			function order()
+			{
+				x.style.left='50px';
+				z.style.left='0px';
+			}
+
+		</script>
+		<script>
+			var modal = document.getElementById('login-form');
+			var modal = document.getElementById('order-form');
+			window.onclick = function(event)
+			{
+				if(event.target == modal)
+				{ modal.style.display ="none";}
+			}
+		</script>
+		
+		<script>
+			$(".order-btn").click(function (e) {
+			e.preventDefault();
+			$('[class^=row]').not($('.'+this.id)).hide();          
+			$('.'+this.id).slideToggle(500);
+			});
+		</script>
+		
+	</body>
+	
+	<footer>
+	<br>
+		<table style="table-layout:fixed; width:100%; margin-left:auto; margin-right:auto;background-color:black"><br><br>
+			<tbody>
+				<tr>	
+					<td>
+						<td style="color:white"><img src="https://www.facebook.com/images/fb_icon_50x50.png">&ensp;Facebook</td>
+						<td style="color:white"><img src="https://help.twitter.com/content/dam/help-twitter/brand/logo_50x50.png">&ensp;Twitter</td>
+						<td style="color:white"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/12.5px-Instagram_logo_2016.svg.png">&ensp;Instagram</td>
+					</td>
+				</tr>
+			</tbody><br><br>
+		</table>
+		
+	</footer>
+	
+</html>

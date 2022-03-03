@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html style="background-color:#ccccff">
+	<head>
+		<title>Meal</title>
+		<link rel="stylesheet" href="order_style.css"> <!--Connect to Order CSS file-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+		
+	</head>
+	
+	<header style="">
+		<iframe src="./filename.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+	</header>
+	
+
+	<body style="background-color: white;margin-left:10%; margin-right:10%">
+		<link rel="stylesheet" href="order_style.css"> <!--Connect to Order CSS file-->
+		<br>
+		<h1 style="text-align:center; text-align:center; font-size:50px; color:white; background-color:#F0B27A;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; margin-top:-5%">HEAVY MEAL<br></h1>
+		
+		
+		<table id="box" style="table-layout:fixed; width:80%; margin-left:auto; margin-right:auto">
+			<tbody>
+				<tr>
+					<th style="text-decoration:none; 
+						background-image:url(https://www.bellandevans.com/wp-content/uploads/Nugget-Fried-Rice_Web-Graphic-2-750x560.jpg);
+						background-position:center; 
+						background-size:800px 500px;
+						border-radius: 15px">
+						<h3 style="margin-top:90%;
+							font-size:25px;
+							color:white;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+							Chickenhugs + Rice</h3>
+						<div id="chicken_rice"
+							class="order-btn" >
+							<button style="border-radius:15px;
+									background-color:black">
+								<h4 style="color:white">Order now</h4>
+							</button>
+						</div> 
+					</th>
+					
+					<th style="text-decoration:none;
+						background-image:url(https://renaissance.mom/wp-content/uploads/2020/12/chicken-pasta.jpg);
+						background-position:center;
+						background-size:600px 400px;
+						border-radius: 15px">
+						<h3 style="margin-top:90%;
+							font-size:25px;
+							color:white;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+							Chickenhugs + Spaghetti</h3>
+						<div id="chicken_spag"
+							class="order-btn">
+							<button style="border-radius:15px;
+									background-color:black">
+								<h4 style="color:white">Order now</h4>
+							</button>
+						</div> 
+					</th>
+					
+					<th style="text-decoration:none;
+						background-image:url(https://goldilocks-sfo.com/wp-content/uploads/2021/08/Spam-Egg-Breakfast-Sand-7668_fav.jpg);
+						background-position:center;
+						background-size:800px 500px;
+						border-radius: 15px">
+						<h3 style="margin-top:90%;
+							font-size:25px;
+							color:white;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+							Supermeal</h3>
+						<div id="supermeal" 
+							class="order-btn">
+							<button style="border-radius:15px;
+									background-color:black">
+								<h4 style="color:white">Order now</h4>
+							</button>
+						</div> 
+					</th>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id ="order-form" class='order-page chicken_rice'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/3c0b542b-d010-4fdc-b066-63e24c173abc.jpg" style="border-radius:15px" 
+					width="380px" 
+					height="280px">
+				<h3 style="text-align:center">&ensp;Chickenhugs + Rice</h3>
+				<h5 >&emsp;Paki lagyan ng details</h5>
+				<iframe src="./chicken_choices.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+				
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page chicken_spag'>
+			<div class="order-box">	
+			<span id='close' 
+				onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+			<img src="https://www.foodnetwork.com/content/dam/images/food/video/0/01/017/0171/0171476.jpg" style="border-radius:15px" 
+				width="100%" height="auto" >
+				<h3 style="text-align:center">&ensp;Chickenhugs + Spaghetti</h3>
+				<h5 style="margin:5%">&emsp;Pakilagyan ng details</h5>
+				<iframe src="./chicken_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page supermeal'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="https://www.starbucks.ph/media/SPAM%20Classic%20Egg%20and%20Cheese%20on%20Potato%20Bread_tcm70-59248_w1024_n.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="auto" >
+				<h3 style="text-align:center">&ensp;Supermeal </h3>
+				<h5 style="margin:5%">&emsp;pakilagyan ng details</h5>
+				<iframe src="./chicken_choices.html"
+					onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			
+			</div>
+		</div>
+			
+
+		<br><br>
+		
+		<script>
+			$(".order-btn").click(function (e) {
+			e.preventDefault();
+			$('[class^=row]').not($('.'+this.id)).hide();          
+			$('.'+this.id).slideToggle(500);
+			});
+		</script>
+		
+	</body>
+	
+	<footer>
+	<br><br>
+		<table style="table-layout:fixed; width:100%; margin-left:auto; margin-right:auto;background-color:black"><br><br>
+			<tbody>
+				<tr>	
+					<td>
+						<td style="color:white"><img src="https://www.facebook.com/images/fb_icon_50x50.png">&ensp;Facebook</td>
+						<td style="color:white"><img src="https://help.twitter.com/content/dam/help-twitter/brand/logo_50x50.png">&ensp;Twitter</td>
+						<td style="color:white"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/12.5px-Instagram_logo_2016.svg.png">&ensp;Instagram</td>
+					</td>
+				</tr>
+			</tbody><br><br>
+		</table>
+		
+	</footer>
+	
+</html>

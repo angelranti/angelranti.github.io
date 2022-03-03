@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html style="background-color:#ccccff">
+	<head>
+		<title>Categories</title>
+		<link rel="stylesheet" href="order_style.css"> <!--Connect to Order CSS file-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+		
+	</head>
+	
+	<header style="">
+		<iframe src="./filename.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+	</header>
+	
+	
+	
+	
+	<body style="background-color:white; margin:5%">
+		
+		<table style="table-layout:fixed; width:95%; margin-left:auto; margin-right:auto">
+			<tbody>
+				<tr> <!-- Menu Display-->
+					<td style="background-color:beige; border-radius:15px">
+						<a 	style="text-decoration:none" href ="breakfast_menu.html" target="_self">
+							<h4 style="margin-top:90%; text-align:center; color:black">
+								Breakfast
+							</h4>
+						</a>
+					</td>
+					<td style="background-color:beige; border-radius:15px">
+						<a 	style="text-decoration:none" href ="meal_menu.html" target="_self">
+							<h4 style="margin-top:90%; text-align:center;color:black">
+								Meals
+							</h4>
+						</a>
+					</td>
+					<th style="background-color:beige; border-radius:15px">
+						<a 	style="text-decoration:none" href ="fries_menu.html" target="_self">
+							<h4 style="margin-top:90%;text-align:center;color:black">
+								Fries
+							</h4>
+						</a>
+					</th>
+					<th style="background-color:beige; border-radius:15px">
+						<a style="text-decoration:none" href ="burger_menu.html" target="_self">
+							<h4 style="margin-top:90%; text-align:center; color:black">
+								Burger
+							</h4>
+						</a>
+					</th>
+				</tr>
+				<tr>
+					<td style="border-style: groove; margin:auto">
+						<dd>
+							<a href="" id="spam" class="order-btn" style="text-decoration:none;color:black">
+								B1 Spam Egg Pandesal
+							</a><br><br>
+						</dd>
+						<dd>
+							<a href="" id="hotcakes" class="order-btn" style="text-decoration:none;color:black">
+								B2 Hotcakes
+							</a><br><br>
+						</dd>
+						<dd>
+							<a href="" id="spam_plat" class="order-btn" style="text-decoration:none;color:black">
+								B3 Spam Platter
+							</a><br><br>
+						</dd>
+					</td>
+					<td style="border-style: groove; margin:auto">
+						<dd><br>
+							<a href="" id="chicken_rice" class="order-btn" style="text-decoration:none;color:black">
+								C1 Chickenhugs + Rice
+							</a><br><br>
+						</dd>
+						<dd>
+							<a href="" id="chicken_spag" class="order-btn" style="text-decoration:none;color:black">
+								C2 Chickenhugs + Spaghetti
+							</a><br><br>
+						</dd>
+						<dd>
+							<a href="" id="super" class="order-btn" style="text-decoration:none;color:black">
+								C3 Supermeal
+							</a><br><br>
+						</dd>
+					</td>
+					<td style="border-style: groove; margin:auto">
+						<dd>
+							<a href="" id="reg_fries" class="order-btn" style="text-decoration:none;color:black">
+								F1 Regular Fries
+							</a><br><br>
+						</dd>
+						<dd>
+							<a href="" id="curly_fries" class="order-btn" style="text-decoration:none;color:black">
+								F2 Curly Fries
+							</a><br><br>
+						</dd>
+					</td>
+					<td style="border-style: groove; margin:auto">
+						<dd>
+							<br><a href="" id="bacon_burger" class="order-btn" style="text-decoration:none;color:black">
+								G1 Aloha Bacon Burger Meal
+							</a><br><br>
+						</dd>
+						<dd>
+							<a href="" id="chicken_burger" class="order-btn" style="text-decoration:none;color:black">
+								G3 Chickenhugs Burger Meal
+							</a><br><br>
+						</dd>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br><br><br>
+		
+		<div id ="order-form" class='order-page spam'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/spam_egg_pandesal.jpeg" style="border-radius:15px" 
+					width="100%" 
+					height="auto">
+				<h3 style="text-align:center">&ensp;Spam Egg Pandesal</h3>
+				<h5 >&emsp;Freshy baked Pandesal with Spam and Egg.</h5>
+				<iframe src="./breakfast_choices.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			</div>
+		</div>
+		
+		
+		<div id ="order-form" class='order-page hotcakes'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/hotcakes.jpg" style="border-radius:15px" 
+					width="380px" 
+					height="300px" >
+				<h3 style="text-align:center">&ensp;hotcakes</h3>
+				<h5 style="margin:5%">&emsp;Freshly made hotcakes.</h5>
+				
+				<form id="order" class="input_group_order" action="order_system.php" method="post" autocomplete="off">	
+					<select type="number" class="drinkchoices-field" name="quantity">
+						<option class="choices">Quantity</option>
+						<option class="choices" value="1">2pcs</option>
+						<option class="choices" value="2">3pcs</option>						
+					</select><br>
+					
+					<select class="drink-side" name="choice">
+						<option class="choices">Drink</option>
+						<option class="choices" value="Hot Chocolate">Hot Chocolate</option>
+						<option class="choices" value="Coffee">Coffee</option>
+					</select>
+					
+					<select class="size-side" name="size">
+						<option class="choices">Size</option>
+						<option class="choices" value="Small">Small</option>
+						<option class="choices" value="Medium">Medium</option>
+						<option class="choices" value="Large">Large</option>
+					</select>
+					
+				</form>	
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page spam_plat'>
+			<div class="order-box">	
+			<span id='close' 
+				onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+			<img src="images/spam_platter.jpg" style="border-radius:15px" 
+				width="380px" height="330px" >
+				<h3 style="text-align:center">&ensp;Spam Platter</h3>
+				<h5 style="margin:5%">&emsp;Spam with Sunny-side-up Egg and Rice</h5>
+				<iframe src="./breakfast_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+				
+			</div>
+		</div>	
+		
+		<div id ="order-form" class='order-page chicken_rice'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/chickenhugs_with_rice.jpg" style="border-radius:15px" 
+					width="380px" 
+					height="280px">
+				<h3 style="text-align:center">&ensp;Chickenhugs + Rice</h3>
+				<h5 >&emsp;Chickenhugs with rice.</h5>
+				<iframe src="./chicken_choices.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+				
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page chicken_spag'>
+			<div class="order-box">	
+			<span id='close' 
+				onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+			<img src="images/chickenhugs_with_spag.jpg" style="border-radius:15px" 
+				width="100%" height="auto" >
+				<h3 style="text-align:center">&ensp;Chickenhugs + Spaghetti</h3>
+				<h5 style="margin:5%">&emsp;Chickenhugs with spaghetti</h5>
+				<iframe src="./chicken_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page supermeal'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/supermeal.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="auto" >
+				<h3 style="text-align:center">&ensp;Supermeal </h3>
+				<h5 style="margin:5%">&emsp;All-in-one Meal.</h5>
+				<iframe src="./chicken_choices.html"
+					onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page reg_fries'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/regular_fries.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="auto" >
+				<h3 style="text-align:center">&ensp;Regular Fries</h3>
+				<h5 style="margin:5%">&emsp;Freshly made Fries.</h5>
+				<iframe src="./chicken_choices.html"
+					onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page curly_fries'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/curly_fries.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="auto" >
+				<h3 style="text-align:center">&ensp;Curly Fries</h3>
+				<h5 style="margin:5%">&emsp;Freshly made Curly Fries.</h5>
+				<iframe src="./chicken_choices.html"
+					onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page bacon_burger'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/aloha_burger.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="280px">
+				<h3 style="text-align:center">&ensp;Aloha Bacon Burger </h3>
+				<h5 >&emsp;Chickenhugs Burger with Bacon and Pineapples.</h5>
+				<iframe src="./food_choices.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+				
+			</div>
+		</div>
+		
+		
+		<div id ="order-form" class='order-page chicken_burger'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="images/chickenhugs_burger.jpg" 
+					style="border-radius:15px"  width="380px"  height="300px" >
+				<h3 style="text-align:center">&ensp;Chickenhugs Burger</h3>
+				<h5 style="margin:5%">&emsp;Chickenhugs Burger.</h5>
+				<iframe src="./food_choices.html"
+					onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+				
+			</div>
+		</div>
+		
+		
+		<br><br>
+		
+		<script>
+			$(".order-btn").click(function (e) {
+			e.preventDefault();
+			$('[class^=row]').not($('.'+this.id)).hide();          
+			$('.'+this.id).slideToggle(500);
+			});
+		</script>
+	</body>
+	
+	<footer>
+	<br>
+		<table style="table-layout:fixed; width:100%; margin-left:auto; margin-right:auto;background-color:black"><br><br>
+			<tbody>
+				<tr>	
+					<td>
+						<td style="color:white"><img src="images/facebook_logo.jpg" width=25px>&ensp;Facebook</td>
+						<td style="color:white"><img src="images/twitter_logo.jpg" width=25px>&ensp;Twitter</td>
+						<td style="color:white"><img src="images/instagram_logo.png" width=25px>&ensp;Instagram</td>
+					</td>
+				</tr>
+			</tbody><br><br>
+		</table>
+		
+	</footer>
+</html>

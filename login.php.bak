@@ -1,0 +1,27 @@
+<?php
+	include('config.php');
+	if(!empty($_SESSION["id"])){
+	  header("Location: home.html");
+	}
+	if(isset($_POST["submit"])){
+		  $username = $_POST["username"];
+		  $password = $_POST["password"];
+		  
+		  $sql= "SELECT * FROM td_user WHERE username = '$username' AND password = '$password'";
+		  $result = mysqli_query($conn,$sql);
+		  
+		  $row = mysqli_fetch_assoc($result);
+		  if(mysqli_num_rows($result) >0){
+				if($password == $row['password']){
+					 echo "YOW";
+				}
+				else{
+				   echo "YOasdafW";
+				}
+		  }
+		  else{
+			  //di natitrigger
+			echo "YOasdasrgregfW";
+		  }
+	}
+?>

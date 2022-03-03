@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html style="background-color:#CCCCFF">
+
+	<head>
+		<title > Chick-A-Dee </title> <!--Logged in-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+		
+	</head>
+	
+	<header style="background-image: url(https://thumbs.dreamstime.com/z/fast-food-dish-white-background-take-away-unhealthy-set-including-burgers-sauces-french-fries-donuts-cola-sweets-icecream-148960914.jpg);
+			background-position:center; 
+			color:white; 
+			margin-top:-5%">
+			
+		<h1 style="text-align:center; font-size:50px; color:#DC7633;
+			text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white">
+		
+		<br><big><big><big>Chick-A-Dee</big></big></big></h1>
+		
+		<h2 style="text-align:center; color:black;
+			text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white">
+			Your everyday foodtrip buddy<br><br></h2>
+	</header>
+	
+	<body style="background-color: white;margin-left:10%; margin-right:10%" onload="myFunction()">
+		<link rel="stylesheet" href="css_file.css">
+		<nav id="header" style="width:30%;margin-left:67%">
+			<ul>
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="index.html" target="_self">
+						<h4 style="text-align:right; margin-right:3%;color:#21618C">Home&ensp;</h4>
+					</a>
+				</li>
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="categories.html" target="_self">
+						<h4 style="text-align:right; margin-right:3%;color:#21618C">Categories</h4>
+					</a>
+				</li>
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="cart.html" target="_self">
+						<h4 style="text-align:right;margin-left:5%;color:#21618C">Cart</h4>
+					</a>
+				</li>
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="index.html" target="_self">
+						<h4 style="text-align:right;color:#21618C">&ensp;Log out</h4>
+					</a>
+				</li>
+				
+			
+				
+				<li style="display:inline-block">
+					<a style="text-decoration:none" href ="about_restaurant.html" target="_self">
+						<h4 style="text-align:right; margin-left:5%;color:#21618C;width:auto">&ensp;About</h4>
+					</a>
+				</li>
+			</ul>
+		</nav> 
+		
+		
+		<link rel="stylesheet" href="css_file.css"> <!--Connect to CSS file-->
+		
+	
+															<!--SEARCH ITEM-->
+		
+		<table style="background-image:url(https://www.homeinspirationideas.net/wp-content/uploads/2017/08/Incredible-Living-Room-Ideas-That-Dreams-Are-Made-Of3.jpeg);
+		background-position:center;width:90%; margin-left:auto; margin-right:auto">
+			<tbody>
+				<th>
+					<input size="75" style="margin:5%" class="center"type="text" placeholder="	Search.." value=""/>
+					<input type="submit"/>
+				</th>
+			</tbody>
+		</table>
+		<br><br><br>
+																<!--EXPLORE MENU-->
+		<h1 style="text-align:center">Explore Menu</h1>
+		<table style="table-layout:fixed; width:80%; margin-left:auto; margin-right:auto">
+			<tbody>
+				<tr>
+					<th style="background-image:url(https://www.eatthis.com/wp-content/uploads/sites/4/2020/07/breakfast-foods.jpg?quality=82&strip=all);
+							background-repeat:no-repeat;background-size:450px 350px;border-radius: 15px">
+						<a href="breakfast_menu.html" target="_self">
+							<h2 style="color:white;display:inline-block;text-decoration:none;margin-top:90%;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black">Breakfast</h2>
+						</a>
+					</th>
+					
+					<th style="background-image:url(https://a.cdn-hotels.com/gdcs/production87/d1048/4ed1a1e8-afa7-4640-b8ca-d1d6ccbb54c1.jpg);
+							background-repeat:no-repeat;background-size:500px 300px;border-radius: 15px">
+						<a href="meal_menu.html" target="_self">
+							<h2 style="color:white;display:inline-block;text-decoration:none;margin-top:90%;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black">Meal</h2>
+						</a>
+					</th>
+					
+					<th style="background-image:url(https://a.cdn-hotels.com/gdcs/production87/d1048/4ed1a1e8-afa7-4640-b8ca-d1d6ccbb54c1.jpg);
+							background-repeat:no-repeat;background-size:500px 300px;border-radius: 15px">
+						<a href="burger_menu.html" target="_self">
+							<h2 style="color:white;display:inline-block;text-decoration:none;margin-top:90%;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black">Burger</h2>
+						</a>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br><br><br>
+																<!-- MOST BUY-->
+		<h5 style="color:black; border-radius: 25px; border: 2px solid #000000; padding: 15px;  width: 40px;  height: 10px; margin:auto"><a href="categories.html" target="_self">MORE</a></h5>
+		
+		<br><br><br>
+		
+		<link rel="stylesheet" href="order_style.css"> <!--Connect to Order CSS file-->
+		
+		<h1 style="text-align:center">Top Seller</h1>
+		
+		
+		<table id="box" style="table-layout:fixed; width:80%; margin-left:auto; margin-right:auto">
+			<tbody>
+				<tr>
+					<th style="text-decoration:none; 
+						background-image:url(https://goldilocks-sfo.com/wp-content/uploads/2021/08/Spam-Egg-Breakfast-Sand-7668_fav.jpg);
+						background-position:center; 
+						background-size:800px 500px;
+						border-radius: 15px">
+						<h3 style="margin-top:90%;
+							font-size:25px;
+							color:white;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+							Spam Egg Pandesal</h3>
+						<div id="spam"
+							class="order-btn" >
+							<button style="border-radius:15px;
+									background-color:black">
+								<h4 style="color:white">Order now</h4>
+							</button>
+						</div> 
+					</th>
+					
+					<th style="text-decoration:none;
+						background-image:url(https://goldilocks-sfo.com/wp-content/uploads/2021/08/Spam-Egg-Breakfast-Sand-7668_fav.jpg);
+						background-position:center;
+						background-size:800px 500px;
+						border-radius: 15px">
+						<h3 style="margin-top:90%;
+							font-size:25px;
+							color:white;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+							Chicken + Rice</h3>
+						<div id="chicken_rice"
+							class="order-btn">
+							<button style="border-radius:15px;
+									background-color:black">
+								<h4 style="color:white">Order now</h4>
+							</button>
+						</div> 
+					</th>
+					
+					<th style="text-decoration:none;
+						background-image:url(https://goldilocks-sfo.com/wp-content/uploads/2021/08/Spam-Egg-Breakfast-Sand-7668_fav.jpg);
+						background-position:center;
+						background-size:800px 500px;
+						border-radius: 15px">
+						<h3 style="margin-top:90%;
+							font-size:25px;
+							color:white;
+							text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+							Aloha Burger</h3>
+						<div id="burger" 
+							class="order-btn">
+							<button style="border-radius:15px;
+									background-color:black">
+								<h4 style="color:white">Order now</h4>
+							</button>
+						</div> 
+					</th>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id ="order-form" class='order-page spam'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="https://www.starbucks.ph/media/SPAM%20Classic%20Egg%20and%20Cheese%20on%20Potato%20Bread_tcm70-59248_w1024_n.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="auto">
+				<h3 style="text-align:center">&ensp;Spam Egg Pandesal</h3>
+				<h5 >&emsp;Freshly hot baked pandesal with Spam and Egg</h5>
+				<iframe src="./food_choices.html" 
+						onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page chicken_rice'>
+			<div class="order-box">	
+			<span id='close' 
+				onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+			<img src="https://www.starbucks.ph/media/SPAM%20Classic%20Egg%20and%20Cheese%20on%20Potato%20Bread_tcm70-59248_w1024_n.jpg" style="border-radius:15px" 
+				width="100%" height="auto" >
+				<h3 style="text-align:center">&ensp;Hotcakes</h3>
+				<h5 style="margin:5%">&emsp;Freshly made hotcakes.</h5>
+				<iframe src="./food_choices.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			</div>
+		</div>
+		
+		<div id ="order-form" class='order-page burger'>
+			<div class="order-box">	
+				<span id='close' 
+					onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+				<img src="https://www.starbucks.ph/media/SPAM%20Classic%20Egg%20and%20Cheese%20on%20Potato%20Bread_tcm70-59248_w1024_n.jpg" style="border-radius:15px" 
+					width="100%" 
+					height="auto" >
+				<h3 style="text-align:center">&ensp;Hotdog </h3>
+				<h5 style="margin:5%">&emsp;Hot Pandesal with Spam and Egg as palaman<br>Bahala ka na sa buhay mo</h5>
+				<iframe src="./food_choices.html"
+					onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+			</div>
+		</div>
+			
+
+		<br><br>
+		
+		<!-- Turns to Hotels-->
+		<h5 style="color:black; border-radius: 25px; border: 2px solid #000000; padding: 15px;  width: 40px;  height: 10px; margin:auto"><a href="all_menu.html" target="_self">MORE</a></h5>
+		
+		<br><br>
+		
+		<script>
+			var w=document.getElementById('order');
+			var x=document.getElementById('login');
+			var y=document.getElementById('register');
+			var z=document.getElementById('btn');
+			function register()
+			{
+				x.style.left='-400px';
+				y.style.left='50px';
+				z.style.left='110px';
+			}
+			function login()
+			{
+				x.style.left='50px';
+				y.style.left='450px';
+				z.style.left='0px';
+			}
+			function order()
+			{
+				x.style.left='50px';
+				z.style.left='0px';
+			}
+
+		</script>
+		<script>
+			var modal = document.getElementById('login-form');
+			var modal = document.getElementById('order-form');
+			window.onclick = function(event)
+			{
+				if(event.target == modal)
+				{ modal.style.display ="none";}
+			}
+		</script>
+		
+		<script>
+			$(".order-btn").click(function (e) {
+			e.preventDefault();
+			$('[class^=row]').not($('.'+this.id)).hide();          
+			$('.'+this.id).slideToggle(500);
+			});
+		</script>
+		
+	</body>
+	
+	<footer>
+	<br>
+		<table style="table-layout:fixed; width:100%; margin-left:auto; margin-right:auto;background-color:black"><br><br>
+			<tbody>
+				<tr>	
+					<td>
+						<td style="color:white"><img src="https://www.facebook.com/images/fb_icon_50x50.png">&ensp;Facebook</td>
+						<td style="color:white"><img src="https://help.twitter.com/content/dam/help-twitter/brand/logo_50x50.png">&ensp;Twitter</td>
+						<td style="color:white"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/12.5px-Instagram_logo_2016.svg.png">&ensp;Instagram</td>
+					</td>
+				</tr>
+			</tbody><br><br>
+		</table>
+		
+	</footer>
+	
+</html>

@@ -1,0 +1,53 @@
+<nav><ul>
+	
+				<div class='button-box'>
+					<div id='btn'></div>
+					<button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+					<button type='button' onclick='register()' class='toggle-btn'>Register</button>
+					
+				</div>
+				
+				<!--Log in form // Connected to "index.php" "login.php" "logout.php" -->
+				
+				
+				<form id="login" class="input-group-login" action="login.php" method="post" autocomplete="off">
+					<input 	class="input-field" type="text" 
+							name="email" id = "email" 
+							placeholder="Email Address" required value=""><br> <!--Email Add confirmation-->
+							
+					<input 	class="input-field" type="password"
+							name="password" id = "password" 
+							placeholder="Password" required value=""> <br> <!--Password Confirmation-->
+							
+					<br><button class="submit-btn" type="submit" name="submit-btn">Login</button>
+				</form>
+				
+				<!--Register Form-->
+				
+				<form id="register" class="input-group-register" action="registration.php" method="post" autocomplete="off">
+				 
+				  <input class="input-field" type="text" 
+						name="name" id = "name" 
+						placeholder="Name" required value=""> <br> <!--Input name-->
+						
+				  <input class="input-field" type="text" 
+						name="username" id = "username" 
+						placeholder="Lastname" required value=""> <br> <!--Input username-->
+						
+				  <input class="input-field" type="email" 
+						name="email" id = "email" 
+						placeholder="Email" required value=""> <br> <!--Input email address-->
+						
+				  <input class="input-field" type="password" 
+						name="password" id = "password" 
+						placeholder="Password" required value=""> <br> <!--Input pasword-->
+						
+				  <input class="input-field" type="password" 
+						name="confirmpassword" id = "confirmpassword" 
+						placeholder="Confirm Password" required value=""> <br> <!--Confirm password-->
+						
+				  <button class="submit-btn" type="submit" name="submit">Register</button>
+				  
+				</form>
+			
+</ul></nav>
